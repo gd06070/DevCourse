@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let date = new Date();
+        let hours = date.getHours();
+        if (hours < 6) {
+            alert("피곤해");
+        } else if (hours < 9) {
+            alert("수업 들을 준비");
+        } else if (hours < 18) {
+            alert("수업 중");
+        } else if (hours < 22) {
+            alert("저녁도 먹고 놀고 과제");
+        } else {
+            alert("쿨쿨")
+        }
+    </script>
+</body>
+</html>
