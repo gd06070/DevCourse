@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script scc = "https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+        $(document).ready(function () {
+            for (let i = 0; i < 10; i ++) {
+                let $dynamic = $('<h1>문서 객체 생성 + ' + i + '</h1>')
+                .css({
+                    backgroundColor : 'lightblue',
+                    color : 'navy'
+                });
+                $('body').append($dynamic);
+            }
+        });
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

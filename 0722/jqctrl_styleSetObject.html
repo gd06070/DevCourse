@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>그라데이션 jquery</title>
+    <script src="https://code.jquery.com/jquery-3.6.4.js"></script>
+    <script>
+      $(document).ready(function () {
+        // 문서 객체를 추가합니다.
+        let output = "";
+        for (let i = 180; i > 0; i--) {
+          output += "<div></div>";
+        }
+        document.body.innerHTML = output;
+        // 스타일을 적용합니다.
+        $("div").css({
+          height: 2,
+          backgroundColor: function (i) {
+            return "rgb(" + (i + 20) + "," + (i + 90) + "," + (i + 170) + ")";
+          },
+        });
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
