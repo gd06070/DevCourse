@@ -1,26 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <script>
-        // 1) *****  
-        /* let star = '';
+      // 1) *****
+      /* let star = '';
         for (let i = 0; i < 5; i ++) {
             star += '*';
         }
-        alert(star); */ 
+        alert(star); */
 
-        //2)
-        /* let star = '';
+      //2)
+      /* let star = '';
         for (let i = 0; i < 5; i++) {
             star += ('*' + '\n');
         } 
-        alert(star); */ 
+        alert(star); */
 
-        //3)
-        /* let star = '';
+      //3)
+      /* let star = '';
         for (let i = 0; i < 5; i++) {
             for (let j = 0; j < 5; j++) {
                 star += ('*');
@@ -29,8 +29,8 @@
         } 
         alert(star); */
 
-        //4)
-        /*let star = '';
+      //4)
+      /*let star = '';
         for (let i = 0; i < 5; i++) {
             for (let j = 0; j <= i; j++) {
                 star += '*';
@@ -39,8 +39,8 @@
         }
         alert(star); */
 
-        //5)
-        /*let star = '';
+      //5)
+      /*let star = '';
         for (let i = 0; i < 5; i++){
             for (let j = 5; j > i; j--) {
                 star += '*';
@@ -49,8 +49,8 @@
         }
         alert(star); */
 
-        //6)
-        /* let star = '';
+      //6)
+      /* let star = '';
         for (let i = 0; i < 5; i++){
             for (let j = 0; j < 4-i; j++) {
                 star += ' ';
@@ -62,8 +62,8 @@
         }
         alert(star); */
 
-        //7)
-        /*let star = '';
+      //7)
+      /*let star = '';
         for (let i = 0; i < 5; i++) {
             for (let j = 0; j < i; j++) {
                 star += ' ';
@@ -75,21 +75,61 @@
         }
         alert(star);*/
 
-        //8)
-        let star = '';
+      //8)
+      /*let star = '';
         for (let i = 0; i < 5; i++) {
-            for (let j = 4; j < 4 - i; j++) {
+            for (let j = 0; j < 5 - i; j++) {
                 star += ' ';
-                for (let k = 1; k < 10; k++) {
-                    
-                }
+            }
+
+            for (let k = 0; k < (2 * i) + 1; k++) {
+                star += "*";
             }
             star += '\n';
         }
-        alert(star);
+        alert(star);*/
+        
+      //9)
+      /*let star = "";
+      for (let i = 0; i < 5; i++) {
+        for (let j = 0; j < i; j++) {
+          star += " ";
+        }
+
+        for (let k = 9; k > 2 * i; k--) {
+          star += "*";
+        }
+        star += "\n";
+      }
+      alert(star);*/
+
+      //10)
+      /*let star = "";
+      let n = 5;
+      
+      //삼각형 상단
+      for (let i = 1; i <= n; i++) {
+        for (let j = 1; j <= n - i; j++) {
+          star += " ";
+        }
+        for (let k = 1; k <= 2 * i - 1; k++) {
+          star += "*";
+        }
+        star += "\n";
+      }
+      //삼각형 하단
+      for (let i = n - 1; i >= 1; i--) {
+        for (let j = 1; j <= n - i; j++) {
+          star += " ";
+        }
+        for (let k = 1; k <= 2 * i - 1; k++) {
+          star += "*";
+        }
+        star += "\n";
+      }
+
+      alert(star);*/
     </script>
-</head>
-<body>
-    
-</body>
-</html> 
+  </head>
+  <body></body>
+</html>
