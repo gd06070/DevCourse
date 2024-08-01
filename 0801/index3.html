@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src = './order.js'></script>
+</head>
+<body>
+    <!-- 배송정보 -->
+    <form id="order_form">
+        <ul>
+            <li>
+                <input type="checkbox" id="chkSameAsShip" name="check-same">
+                <label for="chkSameAsShip">배송지와 동일</label>
+            </li>
+
+            <li>
+                <label class="input-field" for="billingName">이름:</label>
+                <input type="text" name="billingName" id="billingName">
+            </li>
+
+            <li>
+                <label class="input-field" for="billingTel">연락처:</label>
+                <input type="text" name="billingTel" id="billingTel">
+            </li>
+
+            <li>
+                <label class="input-field" for="billingAddr">주소:</label>
+                <input type="text" name="billingAddr" id="billingAddr">
+            </li>
+        </ul>
+    </form>
+
+    <form id="shipping_form">
+        <ul>
+            <li>
+                <label class="input-field" for="shippingName">이름:</label>
+                <input type="text" name="shippingName" id="shippingName">
+            </li>
+
+            <li>
+                <label class="input-field" for="shippingTel">연락처:</label>
+                <input type="text" name="shippingTel" id="shippingTel">
+            </li>
+
+            <li>
+                <label class="input-field" for="shippingAddr">주소:</label>
+                <input type="text" name="shippingAddr" id="shippingAddr">
+            </li>
+        </ul>
+    </form>
+    <input type = "email">
+    <input type = "pw">
+    input
+</body>
+</html>
