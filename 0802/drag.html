@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script defer src = './drag.js'></script>
+    <link rel="stylesheet" href="./css/drag.css">
+</head>
+<body>
+    <!-- <div onclick = "fun(event)">
+        <p>
+            <img src = "./2.jpg" alt = "" width = 400px>
+        </p>
+    </div>
+    <div id = 'show'></div> -->
+
+    <div class="container">
+        <button draggable="true" class = "item">1</button>
+        <button draggable="true" class = "item">2</button>
+    </div>
+
+    <div class="container2">
+        <button draggable="true" class = "item">3</button>
+        <button draggable="true" class = "item">4</button>
+    </div>
+
+    <!-- 자식 요소 추가 -->
+    <div id="parent">
+        <div>child 1</div>
+        <div class="reference">child2</div>
+        <div>child 3</div>
+    </div>
+
+    <!-- <button id="appendChildBtn">appendChild</button>
+    <button id = "insertBeforeBtn">insertBeforeBtn</button> -->
+</body>
+</html>

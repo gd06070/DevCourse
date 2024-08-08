@@ -1,0 +1,29 @@
+.container{
+    background-color: pink;
+    padding : 30px;
+    margin:10px;
+}
+
+.container2{
+    background-color: blueviolet;
+    padding : 30px;
+    margin : 10px;
+}
+
+button {
+    width: 70px;
+    height: 70px;
+    border:none;
+    font-size: 30px;
+    background-color: brown;
+}
+
+#appendChildBtn{
+    width: 200px;
+    font-size: 5px;
+}
+
+.dragging{
+opacity: 0.5;
+    border : 1px solid gray;
+}

@@ -1,0 +1,45 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #F6F5EF;
+    padding: 30px 100px;
+    font-size: 100%;
+}
+
+.header_nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mob_gnb_menus {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.en {
+    margin: 0 15px;
+}
+
+nav ul, li {
+    list-style: none;
+}
+
+.nav_link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #fff;
+    transition: width .3s;
+}
+
+.nav_link:hover::after {
+    width: 100%;
+}

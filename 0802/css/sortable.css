@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+}
+
+.column {
+    background-color: aqua;
+    padding : 5px;
+}
+
+.column h1 {
+    text-align: center;
+}
