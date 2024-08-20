@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="public/main.css">
 </head>
 <body>
     <h1>안녕하세요</h1>
@@ -44,6 +45,15 @@
             <!-- <li><%#= person.name %></li> -->
             <li><%= people[0].name %></li>
         <%# } %>
+    </ul>
+
+    <ul>
+        <% users2.forEach(user => { %>
+            <li>
+                name : <%= user.name %> / age: <%= user.age %> 
+                <%= user.age >= 18 ? 'pass' : 'reject' %> - <%= user.role %>
+            </li>
+        <% }) %>
     </ul>
 </body>
 </html>

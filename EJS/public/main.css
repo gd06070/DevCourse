@@ -1,0 +1,13 @@
+body {
+    background-color: red;
+}
+
+.front {
+    color: blue;
+}
+.back {
+    color: green;
+}
+.full {
+    color: red;
+}
